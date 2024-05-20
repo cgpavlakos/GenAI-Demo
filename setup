@@ -1,0 +1,47 @@
+#!/bin/bash
+
+# Update and upgrade system packages
+sudo apt update -y && sudo apt upgrade -y
+
+# Install required python libraries (assuming python3 is already installed)
+sudo apt install python3-virtualenv unzip -y
+
+# Create directories
+mkdir ~/src
+mkdir ~/src/llama
+
+# Navigate to llama directory
+cd ~/src/llama
+
+# Create virtual environment and activate it
+virtualenv llamaenv
+source llamaenv/bin/activate
+
+# Install python libraries using pip
+pip install streamlit openai llama-index llama-index-llms-openai nltk pypdf langchain langchain_community oci llama-index-llms-langchain llama-index-embeddings-langchain
+
+# Download sample application
+cd ~
+wget https://github.com/cgpavlakos/GenAI-Demo/archive/refs/heads/main.zip
+unzip main.zip -d src
+
+# OCI CLI setup (commented out, replace with your own setup)
+# bash -c "$(curl -L https://raw.githubusercontent.com/oracle/oci-cli/master/scripts/install/install.sh)"
+# oci setup config
+
+
+# Allow traffic on port 8502 (replace with your desired port if needed)
+sudo iptables -I INPUT 6 -m state --state NEW -p tcp --dport 8502 -j ACCEPT
+
+# Activate virtual environment and navigate to app directory
+cd ~/src/llama/llamaenv/bin
+source activate
+cd ~/src/GenAI-Demo-main/
+
+# Run the application in the background
+nohup streamlit run streamlit_app_oci.py &
+
+echo "Application started in the background."
+
+# Deactivate virtual environment (optional)
+# deactivate
