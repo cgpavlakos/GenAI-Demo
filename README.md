@@ -26,7 +26,7 @@ Instructions here
 ## Instructions for other SEs: 
 
 1. Create VM using Canonical Ubuntu 22.04 platform image
-2. attach 'rag-demo-setup.sh' as cloud-init script - talk to Chris if you need this
+2. attach `rag-demo-setup.sh` as cloud-init script - talk to Chris if you need this
 3. ssh in and check setup log with `tail -f llama_setup.log`
 4. when its done, your application will be running on `ipaddress:8502`
 
