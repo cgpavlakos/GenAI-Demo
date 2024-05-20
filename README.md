@@ -24,9 +24,10 @@ Instructions here
 1. Make sure you have port 8502 open on security list
 2. Launch a VM with ubuntu base image
 3. SSH into it (ubuntu@ipaddress) and run setup.sh
-4. Your app is running on http://<ipaddress>:8502
+4. Your app is running on http://ipaddress:8502
 5. Replace contents of ~/src/GenAI-Demo-main/data with whatever other documents you want to have for this demo
 6. Use run.sh to run the demo again after you have already created it
+<<<<<<< HEAD
 
 ## Instructions for other SEs: 
 
@@ -43,3 +44,5 @@ If you get `ValidationError: 1 validation error for OCIGenAIEmbeddings __root__ 
 2. `cd ~/src/GenAI-Demo-main`
 3. `sudo chmod +x run.sh`
 4. `./run.sh`
+=======
+>>>>>>> 68b282f043082c4fa4f0b09da8cb9c07c98dd152
