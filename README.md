@@ -11,12 +11,6 @@ Demo RAG App for Oracle Cloud Generative AI.
 
 http://rag.pavlakos.me
 
-## Get an OpenAI API key
-
-You can get your own OpenAI API key by following the following instructions:
-1. Go to https://platform.openai.com/account/api-keys.
-2. Click on the `+ Create new secret key` button.
-3. Next, enter an identifier name (optional) and click on the `Create secret key` button.
 
 ## Try out the demo
 
@@ -27,7 +21,7 @@ Instructions here
 4. Your app is running on http://ipaddress:8502
 5. Replace contents of ~/src/GenAI-Demo-main/data with whatever other documents you want to have for this demo
 6. Use run.sh to run the demo again after you have already created it
-<<<<<<< HEAD
+
 
 ## Instructions for other SEs: 
 
@@ -36,7 +30,7 @@ Instructions here
 3. ssh in and check setup log with `tail -f llama_setup.log`
 4. when its done, your application will be running on `ipaddress:8502`
 
-o customize: replace the PDFs in ~/src/GenAI-Demo-main/docs
+to customize: replace the PDFs in ~/src/GenAI-Demo-main/docs
 
 If you get `ValidationError: 1 validation error for OCIGenAIEmbeddings __root__ Could not authenticate with OCI client` then there is an issue with the oci credentials, easy to fix:
 
@@ -44,5 +38,3 @@ If you get `ValidationError: 1 validation error for OCIGenAIEmbeddings __root__ 
 2. `cd ~/src/GenAI-Demo-main`
 3. `sudo chmod +x run.sh`
 4. `./run.sh`
-=======
->>>>>>> 68b282f043082c4fa4f0b09da8cb9c07c98dd152
