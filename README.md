@@ -1,6 +1,6 @@
 # 🦙📚 LlamaIndex - Chat with the Streamlit docs
 
-Demo RAG App for Oracle Cloud Generative AI. 
+Demo RAG App for Oracle Cloud Generative AI. No longer being developed. 
 
 ## Overview of the App
 
@@ -9,7 +9,7 @@ Demo RAG App for Oracle Cloud Generative AI.
 
 ## Live Demo App
 
-http://rag.pavlakos.me
+No longer live. Please see https://github.com/cgpavlakos/genai_agent/ for an improved version. 
 
 
 ## Try out the demo
