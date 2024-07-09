@@ -1,4 +1,4 @@
-# 🦙📚 LlamaIndex - Chat with the Streamlit docs
+# 🦙📚 LlamaIndex - RAG Chat 
 
 Demo RAG App for Oracle Cloud Generative AI. No longer being developed. 
 
